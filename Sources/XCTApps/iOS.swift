@@ -1,5 +1,5 @@
 //
-//  XCTApps.swift
+//  iOS.swift
 //  XCTApps
 //
 //  Created by Roman Zakharov on 04/04/2020.
@@ -7,7 +7,8 @@
 
 import XCTest
 
-@available(iOS 13.0, *)
+#if os(iOS)
+@available(iOS 9.0, *)
 public enum XCTApps: String {
     case activity = "com.apple.Fitness"
     case appStore = "com.apple.AppStore"
@@ -15,6 +16,7 @@ public enum XCTApps: String {
     case appleSupport = "com.apple.supportapp"
     case appleTvRemote = "com.apple.TVRemote"
     case appleWatch = "com.apple.Bridge"
+    case books = "com.apple.iBooks"
     case calculator = "com.apple.calculator"
     case calendar = "com.apple.mobilecal"
     case camera = "com.apple.camera"
@@ -32,11 +34,10 @@ public enum XCTApps: String {
     case health = "com.apple.Health"
     case appleHeartStudy = "com.apple.Antimony"
     case home = "com.apple.Home"
-    case iBooks = "com.apple.iBooks"
     case iCloudDrive = "com.apple.iCloudDriveApp"
     case iMovie = "com.apple.iMovie"
     case iTunesConnect = "com.apple.itunesconnect.mobile"
-    case iTunesStore = " com.apple.MobileStore"
+    case iTunesStore = "com.apple.MobileStore"
     case iTunesU = "com.apple.itunesu"
     case keynote = "com.apple.Keynote"
     case logicRemote = "com.apple.musicapps.remote"
@@ -75,3 +76,4 @@ public enum XCTApps: String {
 
     public var app: XCUIApplication { return XCUIApplication(bundleIdentifier: rawValue) }
 }
+#endif
