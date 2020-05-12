@@ -1,6 +1,8 @@
 # XCTApps
 
-This package contains an enumeration of all iOS 13 system and Apple's apps. Designed to be used with XCTest. 
+This package contains an enumeration of all iOS, iPadsOS, macOS, and tvOS apps developed by Apple. 
+
+Designed to be used with XCTest. 
 
 ```swift
 import XCTest
