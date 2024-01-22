@@ -29,6 +29,7 @@ public enum XCTApps: String {
     case digitalColorMeter = "com.apple.DigitalColorMeter"
     case diskUtility = "com.apple.DiskUtility"
     case faceTime = "com.apple.FaceTime"
+    case finder = "com.apple.finder"
     case fontBook = "com.apple.FontBook"
     case garageBand = "com.apple.garageband10"
     case grapher = "com.apple.grapher"
